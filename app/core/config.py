@@ -11,9 +11,11 @@ class Settings(BaseSettings):
     groq_api_key: str = ""
     tavily_api_key: str = ""
     pinecone_api_key: str = ""
-    pinecone_index_name: str = "fde-hr-policy-rag"
+    ollama_api_key: str = ""
+    ollama_base_url: str = "http://localhost:11434"
+    pinecone_index_name : str = "enterprise-hr-rag"
     pinecone_namespace: str = "company-hr-kb"
-    embedding_model: str = "text-embedding-3-small"
+    embedding_model: str = "qwen3-embedding:0.6b"
     groq_model: str = "openai/gpt-oss-120b"
     top_k: int = 4
     max_retries: int = 1
